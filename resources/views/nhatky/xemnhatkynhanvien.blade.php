@@ -24,7 +24,7 @@
                     @csrf
                     <select name="sortCV">
                     <option  value="" selected >Tất cả Công việc </option>
-                    @foreach($data->congviec as $cv)
+                    @foreach($congviec as $cv)
                     <option  value="{{$cv->MaCV}}"> {{$cv->Tieude}}</option>
                     @endforeach
                 </select>
