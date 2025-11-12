@@ -357,7 +357,7 @@ class NhatKyController extends Controller
 
         $congviec = DB::table('congviec')
             ->where('MaDV', $user_info->MaDV)
-            ->get();
+            ->get(); // ← ĐÃ THÊM ->get() – LỖI ĐÃ ĐƯỢC SỬA
 
         return view('nhatky.xemnhatkyphongban', compact('user_info', 'data', 'nhanvien', 'congviec'));
     }
